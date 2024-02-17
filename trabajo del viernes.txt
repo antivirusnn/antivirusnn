@@ -1,0 +1,112 @@
+import foundation
+
+let mayorEdad = 18
+var age = 15
+
+//PARA INTEPOLAR UN VALOR DENTRO DE UNA CADENA DE T
+//USAMOS\(VARIABLE)
+
+print("tienes \(age) años")
+
+//IF
+//SENTENCIA CONDICIONAL
+//TOMA DE DESICIONES
+//SINTAXIS
+//IF (CONDICION) ( )
+
+//OPERRADOR CONDICIONALES O MATEMATICOS
+/*
+==        -->IGUALDAD
+>         -->MAYOR QUE
+<         -->MENOR QUE
+>=        -->MAYOR O IGUAL QUE
+<=        -->MENOR O IGUAL QUE
+!=        -->DESIGUALDAD    --> NO IGUAL
+
+OPERADORES LOGICOS
+&&        --> AND        -->Y
+||        --> OR         -->O
+*/
+
+//IF
+if (age > 18){
+    print("tienes \(age) años,eres mayor de edad.")
+}
+
+//SENTENCIA ELSE 
+//SE EJECUTA CUANDO NO SE EJECUTA LA SETENCIA IF
+// } ELSE {} 
+
+
+if (age > 18){
+    print("tienes \(age) años,eres mayor de edad.")
+} else {
+    print("tienes \(age) años,eres menor de edad.")
+}
+
+//EVALUANDO MAS DE UNA CONDICION
+if (age >= 12 && age <= 14){
+    print("estas en la pubertad")
+} else {
+    print("estas en la adolescencia")
+}
+
+// } ELSE IF { }
+//NOS DA 3 TIPOS DE BLOQUES DE EJECUCION
+if (age >= 12 && age <= 14){
+    print("Estas en la Pubertad.")
+} else {
+    print("Estas en la adolecencia.")
+} else {
+    print("Ya eres un adulto.")
+}
+
+
+// switch
+// evalua un valor y lo cmopara
+let town = "ECATEPEC"
+
+switch town {
+    case "ECATEPEC":
+        print("estas en estado de mexico")
+    case "NEZAHUALCOYOTL":
+        print("estas en estado de mexico")
+    case "NAUCALPAN":
+        print("estas en estado de mexico")
+    case "GAM":
+        print("ciudad de mexico")
+    case "CUAUTHEMOC":
+        print("ciudad de mexico")
+    default:
+        print("no se su ciudad/estado")
+}
+
+switch town {
+    case "ECATEPEC","NEZAHUALCOYOTL","NAUCALPAN":
+        print("estas en estado de mexico")
+    case "GAM","CUAUTHEMOC":
+        print("ciudad de mexico")
+    default:
+        print("no se su ciudad/estado")
+}   
+
+
+//OTRO EJEMPLO
+age = 10
+
+switch age {
+    case 0,1,2:
+    print("Bebe")
+    case 3..10:
+    print("Niño")
+    case 11..<14:
+    print("Puberto")
+    case 15..<21:
+    print("Adolecente")
+    case 21..<70:
+    print("Adulto")
+    case 70..<100:
+    print("Anciano")
+    case 1,2,3:
+    print("Sorprendido")
+}
